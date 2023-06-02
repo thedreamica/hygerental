@@ -97,7 +97,7 @@ const Services = () => {
             <Typography sx={para}>
               Looking for a reliable car rental service? Our fleet of
               well-maintained vehicles and flexible rental options make it easy
-              to get on the road. Whether it's for business or pleasure,
+              to get on the road. Whether it&apos;s for business or pleasure,
               we&apos;ve got you filled.
             </Typography>
           </Box>
