@@ -1,5 +1,12 @@
 import Head from "next/head";
-import HeroSection from "@/components/hero";
+import Hero from "@/components/hero/Hero";
+import Categories from "@/components/categories/Categories";
+import Benefits from "@/components/benefits/Benefits";
+import Features from "@/components/features/Features";
+import Process from "@/components/process/Process";
+import Updates from "@/components/updates/Updates";
+import Services from "@/components/services/Services";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -15,8 +22,14 @@ export default function Home() {
         />
       </Head>
       <main>
-        <HeroSection />
-        <h1>hello</h1>
+        <Hero />
+        <Categories />
+        <Benefits />
+        <Features />
+        <Process />
+        <Updates />
+        <Services />
+        <Footer />
       </main>
     </>
   );
