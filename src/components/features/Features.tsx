@@ -1,10 +1,6 @@
 import React from "react";
+import Image from "next/image";
 import { Box, Typography } from "@mui/material";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import ConstructionOutlinedIcon from '@mui/icons-material/ConstructionOutlined';
-import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
-import NoEncryptionGmailerrorredOutlinedIcon from '@mui/icons-material/NoEncryptionGmailerrorredOutlined';
-import DirectionsBikeOutlinedIcon from '@mui/icons-material/DirectionsBikeOutlined';
 
 const Features = () => {
   const boxStyles = {
@@ -12,14 +8,10 @@ const Features = () => {
     width: "auto",
     p: "2em",
   };
-  const iconStyles = {
-    fontSize: { xs: "3.5em", sm: "3.5em", md: "3.8em", lg: "3.8em" },
-    color: "primary.main",
-  };
   const title = {
     fontSize: { xs: "1.8em", sm: "1.8em", md: "2em", lg: "2em" },
     fontWeight: "600",
-    mb: ".5em",
+    my: ".5em",
   };
   const para = {
     width: { xs: "auto", sm: "auto", md: "auto", lg: "auto" },
@@ -27,6 +19,7 @@ const Features = () => {
     fontWeight: "400",
     lineHeight: "2.3em",
   };
+  const imageStyles = { position: "relative", width: "50px", height: "50px" };
   return (
     <Box
       sx={{
@@ -75,7 +68,13 @@ const Features = () => {
       >
         {/* first item */}
         <Box sx={boxStyles}>
-          <ConstructionOutlinedIcon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/qvDD58Jw/feature1.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>Best Services</Typography>
           <Typography sx={para}>
             We have unmatched safety features to make your experience the best
@@ -84,7 +83,13 @@ const Features = () => {
         </Box>
         {/* second item */}
         <Box sx={boxStyles}>
-          <AccountBalanceWalletOutlinedIcon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/PqB3tT88/feature2.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>Deposit Safety</Typography>
           <Typography sx={para}>
             Guaranteed deposit safety for worry-free transactions is ensured.
@@ -92,7 +97,13 @@ const Features = () => {
         </Box>
         {/* third item */}
         <Box sx={boxStyles}>
-          <NoEncryptionGmailerrorredOutlinedIcon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/hGJZWfhB/feature3.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>No Limitations</Typography>
           <Typography sx={para}>
             No riding limits, or tenure limitations enjoy the best facilities
@@ -101,7 +112,13 @@ const Features = () => {
         </Box>
         {/* fourth item */}
         <Box sx={boxStyles}>
-          <DirectionsBikeOutlinedIcon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/6qV1jgq4/feature4.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>Safe Rides and Stay</Typography>
           <Typography sx={para}>
             we ensure the safety of rides in vehicle and safe stay at homes.
@@ -109,7 +126,13 @@ const Features = () => {
         </Box>
         {/* fifth item */}
         <Box sx={boxStyles}>
-          <Brightness7Icon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/zfpSVNMf/feature-Icon5.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>Flexibility & Expertise</Typography>
           <Typography sx={para}>
             With our expertise and flexible services we welcome endless
@@ -118,7 +141,13 @@ const Features = () => {
         </Box>
         {/* sixth item */}
         <Box sx={boxStyles}>
-          <Brightness7Icon sx={iconStyles} />
+          <Box sx={imageStyles}>
+            <Image
+              src="https://i.postimg.cc/bdX1KwGm/feature-Icon6.png"
+              alt=""
+              fill={true}
+            />
+          </Box>
           <Typography sx={title}>Pick your Own</Typography>
           <Typography sx={para}>
             We have the diverse range of options for rentals.

@@ -7,6 +7,7 @@ import Process from "@/components/process/Process";
 import Updates from "@/components/updates/Updates";
 import Services from "@/components/services/Services";
 import Footer from "@/components/footer/Footer";
+import ContactUs from "@/components/contact/ContactUs";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Process />
         <Updates />
         <Services />
+        <ContactUs />
         <Footer />
       </main>
     </>

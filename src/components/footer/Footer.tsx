@@ -31,6 +31,8 @@ const Footer = () => {
         px: { xs: "1.3em", sm: "1.3em", md: "4em", lg: "3em" },
         bgcolor: "black",
         color: "white",
+        display: "grid",
+        placeItems: "center",
       }}
     >
       {/* grid */}
@@ -44,7 +46,7 @@ const Footer = () => {
             lg: "auto auto auto",
           },
           my: { xs: "0", sm: "0", md: "5em", lg: "5em" },
-          gap: "3em",
+          gap: { xs: "3em", sm: "3em", md: "3em", lg: "19.7em" },
         }}
       >
         {/* first */}
@@ -134,37 +136,44 @@ const Footer = () => {
           >
             Affordable <span style={{ color: "#EEB609" }}>&</span> Flexible
           </Typography>
-
-          <Button
-            variant="outlined"
+          <Link
+            href="#ContactUs"
             sx={{
-              fontSize: { xs: "1em", sm: "1em", md: "1.5em", lg: "1.5em" },
-              fontWeight: "600",
-              width: "fit-content",
-              borderRadius: ".6em",
-              color: "white",
-              py: { xs: ".7em", sm: ".7em", md: ".6em", lg: ".6em" },
-              px: { xs: "2.1em", sm: "2.1em", md: "1,2em", lg: "1.2em" },
-              border: "1px solid white",
-              ":hover": { border: "1px solid white" },
-              mx: { xs: "auto", sm: "auto", md: "0", lg: "0" },
+              display: "flex",
+              justifyContent: "flex-start",
+              textDecoration: "none",
             }}
           >
-            CONTACT US
-            <ArrowOutwardIcon
+            <Button
+              variant="outlined"
               sx={{
-                color: "secondary.dark",
-                fontSize: {
-                  xs: "1.2em",
-                  sm: "1.2em",
-                  md: "1.4em",
-                  lg: "1.4em",
-                },
-                ml: ".5em",
-                mb: "3px",
+                fontSize: { xs: "1em", sm: "1em", md: "1.5em", lg: "1.5em" },
+                fontWeight: "600",
+                borderRadius: ".6em",
+                color: "white",
+                py: { xs: ".7em", sm: ".7em", md: ".6em", lg: ".6em" },
+                px: { xs: "2.1em", sm: "2.1em", md: "1,2em", lg: "1.2em" },
+                border: "1px solid white",
+                ":hover": { border: "1px solid white" },
+                mx: { xs: "auto", sm: "auto", md: "0", lg: "0" },
               }}
-            />
-          </Button>
+            >
+              CONTACT US
+              <ArrowOutwardIcon
+                sx={{
+                  color: "secondary.dark",
+                  fontSize: {
+                    xs: "1.2em",
+                    sm: "1.2em",
+                    md: "1.4em",
+                    lg: "1.4em",
+                  },
+                  ml: ".5em",
+                  mb: "3px",
+                }}
+              />
+            </Button>
+          </Link>
         </Box>
         <Box
           sx={{
@@ -192,9 +201,10 @@ const Footer = () => {
             lg: "space-between",
           },
           alignItems: "flex-end",
+          width: "100%",
         }}
       >
-        <Box>
+        <Box sx={{ ml: { xs: "0", sm: "0", md: "0", lg: "8.5em" } }}>
           <Typography
             sx={{
               ...rightSyles,

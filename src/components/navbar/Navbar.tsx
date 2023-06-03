@@ -105,6 +105,7 @@ const Navbar = () => {
       </Box>
       {/* btn */}
       <Button
+      href="#ContactUs"
         sx={{
           position: {
             xs: "absolute",

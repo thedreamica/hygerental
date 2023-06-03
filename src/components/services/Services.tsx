@@ -37,7 +37,7 @@ const Services = () => {
     <Box
       id="Services"
       sx={{
-        py: { xs: "2em", sm: "2em", md: "2em", lg: "2em" },
+        py: { xs: "2em", sm: "2em", md: "2em", lg: "4em" },
         px: { xs: "1.3em", sm: "1.3em", md: "4em", lg: "3em" },
       }}
     >

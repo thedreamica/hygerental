@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Box, Typography } from "@mui/material";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
 import CoffeeOutlinedIcon from "@mui/icons-material/CoffeeOutlined";
 import WalletOutlinedIcon from "@mui/icons-material/WalletOutlined";
 import CallIcon from "@mui/icons-material/Call";
@@ -36,7 +35,7 @@ const Benefits = () => {
     <Box
       id="Benefits"
       sx={{
-        py: { xs: "3em", sm: "3em", md: "2.5em", lg: "4em" },
+        py: { xs: "2em", sm: "2em", md: "2.5em", lg: "2em" },
         px: { xs: "1.3em", sm: "1.3em", md: "2em", lg: "3em" },
         color: "white",
         bgcolor: "black",
