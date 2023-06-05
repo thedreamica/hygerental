@@ -28,28 +28,23 @@ const Footer = () => {
     <Box
       sx={{
         py: { xs: "1.3em", sm: "1.3em", md: "2em", lg: "2em" },
-        px: { xs: "1.3em", sm: "1.3em", md: "4em", lg: "3em" },
+        px: { xs: "1.3em", sm: "1.3em", md: "4em", lg: "6.5em" },
         bgcolor: "black",
         color: "white",
         display: "grid",
         placeItems: "center",
       }}
     >
-      {/* grid */}
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "auto",
-            sm: "auto",
-            md: "auto auto auto",
-            lg: "auto auto auto",
-          },
           my: { xs: "0", sm: "0", md: "5em", lg: "5em" },
-          gap: { xs: "3em", sm: "3em", md: "3em", lg: "19.7em" },
+          gap: { xs: "3em", sm: "3em", md: "3em", lg: "4em" },
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
         }}
       >
-        {/* first */}
         <Box sx={boxStyles}>
           {/* logo */}
           <Box
@@ -78,7 +73,6 @@ const Footer = () => {
             We Catalyze your happiness
           </Typography>
         </Box>
-        {/* second */}
         <Box
           sx={{
             ...boxStyles,
@@ -116,7 +110,6 @@ const Footer = () => {
           </Typography>
           <Typography sx={text}>Mon - Friday, 8am : 5pm</Typography>
         </Box>
-        {/* third */}
         <Box
           sx={{
             ...boxStyles,
@@ -190,7 +183,6 @@ const Footer = () => {
           <YouTubeIcon sx={{ fontSize: "1.8em" }} />
         </Box>
       </Box>
-      {/* copyrights */}
       <Box
         sx={{
           display: "flex",
@@ -204,7 +196,7 @@ const Footer = () => {
           width: "100%",
         }}
       >
-        <Box sx={{ ml: { xs: "0", sm: "0", md: "0", lg: "8.5em" } }}>
+        <Box>
           <Typography
             sx={{
               ...rightSyles,

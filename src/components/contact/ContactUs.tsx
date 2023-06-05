@@ -4,7 +4,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 
 const ContactUs = () => {
   const inputs = {
-    width: { xs: "auto", sm: "auto", md: "450px", lg: "450px" },
+    width: { xs: "auto", sm: "auto", md: "450px", lg: "auto", xl: "auto" },
   };
   const btnStyles = {
     bgcolor: "primary.main",
@@ -62,18 +62,13 @@ const ContactUs = () => {
       </Box>
       <Box
         sx={{
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "auto",
-            sm: "auto",
-            md: "auto auto",
-            lg: "auto auto",
-          },
-          gap: { xs: "2em", sm: "2em", md: "4em", lg: "4em" },
-          width: { xs: "100%", sm: "100%", md: "auto", lg: "auto" },
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          gap: { xs: "2em", sm: "2em", md: "4em", lg: "3em" },
+          flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
         }}
       >
-        {/* form */}
         <Box
           sx={{
             display: "grid",
@@ -85,6 +80,7 @@ const ContactUs = () => {
             },
             gap: "3em",
             overflow: "hidden",
+            width: { xs: "auto", sm: "auto", md: "auto", lg: "150%" },
           }}
         >
           <TextField
@@ -132,11 +128,10 @@ const ContactUs = () => {
             CONTACT US
           </Button>
         </Box>
-        {/* image */}
         <Box
           sx={{
             position: "relative",
-            width: { xs: "auto", sm: "auto", md: "auto", lg: "500px" },
+            width: { xs: "100%", sm: "auto", md: "auto", lg: "100%" },
             height: { xs: "320px", sm: "320px", md: "200px", lg: "500px" },
           }}
         >
@@ -149,18 +144,12 @@ const ContactUs = () => {
       </Box>
       <Box
         sx={{
-          display: "flex",
+          display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
           justifyContent: "flex-start",
-          width: { xs: "auto", sm: "auto", md: "auto", lg: "89%" },
+          width: { xs: "auto", sm: "auto", md: "auto", lg: "100%" },
         }}
       >
-        <Button
-          variant="contained"
-          sx={{
-            ...btnStyles,
-            display: { xs: "none", sm: "none", md: "block", lg: "block" },
-          }}
-        >
+        <Button variant="contained" sx={btnStyles}>
           CONTACT US
         </Button>
       </Box>
